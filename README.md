@@ -96,7 +96,7 @@ Let's start
     ...
    ```
 7. (Optional) Create Icon & Splash-Screen images (if you skip this step you need to remove the command from [`package.json`](package.json))
-   1. Install [Capacitor Resources](https://www.npmjs.com/package/capacitor-resources) `npm i capacitor-resources`
+   1. Install [Capacitor Resources](https://www.npmjs.com/package/capacitor-resources) `npm install capacitor-resources -g`
    2. Create in the root of the project a folder with the name `resources`
    3. Follow [these instructions](./resources/README.md) for create the right images
 8. Build Project `npm run build:ionic` (this is going to build the project for both platforms)
