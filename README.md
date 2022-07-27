@@ -100,6 +100,7 @@ Let's start
    2. Create in the root of the project a folder with the name `resources`
    3. Follow [these instructions](./resources/README.md) for create the right images
 8. Build Project `npm run build:ionic` (this is going to build the project for both platforms)
+    - If you have a peer dependency issue that doesn't allow you to finish the build you can try build with the command `npx cap add android` for Android and `npx cap add ios` for iOS
     - Sometimes you might need to update `gradle` for Android app, check it in your [Android Studio](https://developer.android.com/studio) IDE to do this, more info in the [the troubleshooting section](#android-app)
 9.  Emulate project `npm run emulate:ios` for iOS or `npm run emulate:android` for Android, and choose the device that you want
 
@@ -120,6 +121,8 @@ Let's start
 | `npm run release:ios` | Create a release package for production |
 | `npx cap open android` | Open project on Android Studio |
 | `npx cap open ios` | Open project on Xcode |
+| `npx cap add android` | Alternative way to build Android project |
+| `npx cap add ios` | Alternative way to build iOS project |
 
 
 ### Mobile (Ionic) Application Release
