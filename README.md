@@ -141,14 +141,14 @@ Let's start
     1. Assuming that you have tested the app, so have built it once at least, run `npm run build:sync`, `npm run resources` and `npm run release:android`
     2. Open the the folder `[root]/android` as a project using [Android Studio](https://developer.android.com/studio) (if the previous step didn't open it automatically), alternatively, you can open it by running `npx cap open android`
        1. Make sure that for each release you increase the bundle version (Version Code) and App version (Version Name)
-       2. You can do this in [Android Studio](https://developer.android.com/studio) `File -> Project Structure -> Default Config`
+       2. You can do this in [Android Studio](https://developer.android.com/studio) `File -> Project Structure -> Modules -> Default Config`
     3. From the top NavBar select `Build -> Generate Signed Bundle or APK`
     4. Select `Android App Bundle` and click `next`
     5. Select the `key` stored to update the app, once the `key` file has been selected this should complete the remaining fields, and now click on `next` 
        - If is the first time uploading the app you must create a new key clicking on the `Create new...` button
     6. Select `release` option and click `finish`
     7. Now, Android Studio will start to build the APK Bundle, if you keep an eye in the right-bottom corner you will be able to see the a notification when is ready and where is located, which usually would be in `[root]/android/app/release/app-release.aab`
-    8.  Now go to [Google Play Console](https://developer.android.com/distribute/console) to upload the app
+    8.  Now go to [Google Play Console](https://play.google.com/console/u/0/developers) to upload the app
     9.  Go to the `Production` section and in the `App bundles` and upload the created file in the previous step
 
 
@@ -163,12 +163,14 @@ Let's start
 -   iOs Build Distributable bundle (`Bundle` used to publish in the App Store):
 
     1. Assuming that you have tested the app, so have built it once at least, run `npm run build:sync` and `npm run resources`
-    2. Open the the folder `[root]/ios` as a project using [Xcode](https://developer.apple.com/xcode/) (if the previous step didn't open it automatically), alternatively, you can open it by running `npx cap open ios`
+    2. Open the the folder `[root]/ios` as a project using [Xcode](https://developer.apple.com/xcode/), you can open it by running `npx cap open ios`
        - (Optional) Once is open, check the "Build Warning" tab and click in the automatic fix (if is possible) when that fix is finished, select a device for testing in the top nav bar, and click on "play" to make sure that is still working 
     3. Now, in the TopNavBar, where says `App` (in the center), select the option `Any iOS Device` (this is for built the app for any device)
-    4. Under Project Navigator, select your porject and then in the right section select `Signing & Capabilities` and make sure you have chosen the your organization team
-    5. Under Project Navigator, select your project and then in the right section select `General` check the version and build info, those must be greater than the previous built and version (ideally should match with the used on the Android Build)
+    4. Under Project Navigator, select your porject and then in the middle section select `Signing & Capabilities` and make sure you have chosen your organization's team
+    5. Under Project Navigator, select your project and then in the middle section select `General` check the version and build info, those must be greater than the previous built and version (ideally should match with the used on the Android Build)
     6. In the TopNavBar, click on `Product -> Archive` and wait till finish the process (can be checked on the TopNavBar, there should be a green wheel), then in the new opened windows, select your version app (it will show you a list with previous version of the same app) and click on `Validate App` and follow the instruction until finish the process
+       - Once the Validate windws is opene, write the name of your app in the field "name" the other way will stay just as "App"
+       - If you have the error "error finding app store connect credentials" open your account on [App Store Connect](https://appstoreconnect.apple.com/) using the website and try again
     7. Now click on `Distribute App`, select `App Store Connect`, and then `Upload`
     8. All the rest must be updated on the [App Store Connect](https://appstoreconnect.apple.com/) website
 
