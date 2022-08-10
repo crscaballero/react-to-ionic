@@ -169,7 +169,7 @@ Let's start
     4. Under Project Navigator, select your porject and then in the middle section select `Signing & Capabilities` and make sure you have chosen your organization's team
     5. Under Project Navigator, select your project and then in the middle section select `General` check the version and build info, those must be greater than the previous built and version (ideally should match with the used on the Android Build)
     6. In the TopNavBar, click on `Product -> Archive` and wait till finish the process (can be checked on the TopNavBar, there should be a green wheel), then in the new opened windows, select your version app (it will show you a list with previous version of the same app) and click on `Validate App` and follow the instruction until finish the process
-       - Once the Validate windws is opene, write the name of your app in the field "name" the other way will stay just as "App"
+       - Once the Validate windws is opened, write the name of your app in the field "name" the other way will stay just as "App"
        - If you have the error "error finding app store connect credentials" open your account on [App Store Connect](https://appstoreconnect.apple.com/) using the website and try again
     7. Now click on `Distribute App`, select `App Store Connect`, and then `Upload`
     8. All the rest must be updated on the [App Store Connect](https://appstoreconnect.apple.com/) website
